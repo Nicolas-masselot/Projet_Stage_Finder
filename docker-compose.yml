@@ -7,11 +7,12 @@ services:
     volumes:
       - './Projet_PHP:/app'
     depends_on:
-      - mariadb
-  mariadb:
-    image: docker.io/bitnami/mariadb:10.3
+      - mysql
+  mysql:
+    image: mysql
     environment:
-      # ALLOW_EMPTY_PASSWORD is recommended only for development.
-      - ALLOW_EMPTY_PASSWORD=yes
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+       - "./Projet_PHP/stage_projet.sql:/docker-entrypoint-initdb.d/1.sql"
 
 #reste à ajouter le code source
