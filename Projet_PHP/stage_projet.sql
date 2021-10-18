@@ -75,22 +75,21 @@ CREATE TABLE `contenus` (
 
 
 
-ALTER TABLE `Stage` ADD CONSTRAINT `Stage_fk0` FOREIGN KEY (`auteur`) REFERENCES `Personne`(`id_personne`);
-ALTER TABLE `Stage` ADD CONSTRAINT `Stage_fk1` FOREIGN KEY (`entreprise`) REFERENCES `Entreprise`(`id_entreprise`);
-ALTER TABLE `Stage` ADD CONSTRAINT `Stage_fk2` FOREIGN KEY (`sauvegarder_offre`) REFERENCES `Entreprise`(`id_entreprise`);
+ALTER TABLE `stage` ADD CONSTRAINT `Stage_fk0` FOREIGN KEY (`auteur`) REFERENCES `Personne`(`id_personne`);
+ALTER TABLE `stage` ADD CONSTRAINT `Stage_fk1` FOREIGN KEY (`entreprise`) REFERENCES `entreprise`(`id_entreprise`);
+ALTER TABLE `stage` ADD CONSTRAINT `Stage_fk2` FOREIGN KEY (`sauvegarder_offre`) REFERENCES `entreprise`(`id_entreprise`);
 
-ALTER TABLE `Entreprise` ADD CONSTRAINT `Entreprise_fk0` FOREIGN KEY (`tuteur`) REFERENCES `Personne`(`id_personne`);
+ALTER TABLE `entreprise` ADD CONSTRAINT `Entreprise_fk0` FOREIGN KEY (`tuteur`) REFERENCES `Personne`(`id_personne`);
 
-ALTER TABLE `Stage` ADD CONSTRAINT `Personne_fk0` FOREIGN KEY (`postuler`) REFERENCES `Personne`(`id_personne`);
+ALTER TABLE `stage` ADD CONSTRAINT `Personne_fk0` FOREIGN KEY (`postuler`) REFERENCES `Personne`(`id_personne`);
 
-ALTER TABLE `contenus` ADD CONSTRAINT `auteur_fk0` FOREIGN KEY (`id_auteur`) REFERENCES `Personne`(`id_personne`)
+ALTER TABLE `contenus` ADD CONSTRAINT `auteur_fk0` FOREIGN KEY (`id_auteur`) REFERENCES `Personne`(`id_personne`);
 
 
-CREATE USER 'user_projet_mvc'@'%' IDENTIFIED BY 'projet_mvc';
+CREATE USER 'user_projet_mvc'@'%' IDENTIFIED BY 'projet_mvc' WITH MAX_QUERIES_PER_HOUR 0
+MAX_UPDATES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_USER_CONNECTIONS 0;
 
-GRANT USAGE ON * . * TO 'user_projet_mvc'@'%' IDENTIFIED BY 'projet_mvc' WITH MAX_QUERIES_PER_HOUR 0
-MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;
-GRANT ALL PRIVILEGES ON `stages_projet` . * TO  'user_projet_mvc'@'%';
+GRANT ALL PRIVILEGES ON stages_projet.* TO 'user_projet_mvc'@'%';
 
 INSERT INTO Personne (`statut`,
 					  `fonction_pro`,
@@ -107,19 +106,19 @@ INSERT INTO Personne (`statut`,
 					  `date_naiss`,
 					  `num_secu`,
 					  `mutuelle`,
-					  `motdepasse`) VALUES (`Secretariat`,
-					  						`secrétaire`,
-											`Mr`,
-											`prenom_admin1`,
-											`nom_admin1`,
-											`adm_mail@gmail.com`,
-											`adresse1`,
-											`complement1`,
-											`83433`,
-											`ville1`,
-											`France`,
-											`04645468434`,
-											`1997-06-10`,
-											`1514614646843`,
-											`mutuelle1`,
-											`123456` );
+					  `motdepasse`) VALUES ('Secretariat',
+					  						'secrétaire',
+											'Mr',
+											'prenom_admin1',
+											'nom_admin1',
+											'adm_mail@gmail.com',
+											'adresse1',
+											'complement1',
+											'83433',
+											'ville1',
+											'France',
+											'0464546843',
+											'1997-06-10',
+											'1514614646843',
+											'mutuelle1',
+											'123456' );
