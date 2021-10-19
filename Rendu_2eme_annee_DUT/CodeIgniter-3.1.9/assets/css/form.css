@@ -1,0 +1,223 @@
+@font-face 
+{
+    font-family: Coolvetica;
+	src: url('../font/coolvetica.ttf');
+}
+
+@font-face
+{
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body
+{
+
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 8000% 8000%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+h1,
+h6 {
+	font-family: 'Open Sans';
+	font-weight: 300;
+	right: 0;
+	left: 0;
+}
+
+h1
+{
+	font-family: Coolvetica;
+	font-size: 4vw;
+	text-align: center;
+	margin-bottom: 5%;
+	color: white;
+	text-shadow: 3px 2px 2px #2c2c2c;
+}
+
+input[type=submit]{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    font-family: Coolvetica;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+select {
+    width: 30%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+.styled-select {
+   height: 29px;
+   overflow: hidden;
+   width: 240px;
+}
+
+.styled-select select {
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 268px;
+}
+
+.semi-square {
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+}
+
+.blue    { background-color: #3b8ec2; }
+
+form
+{
+	max-width: 55%;
+	margin: 0 auto;
+	font-family: Coolvetica;
+}
+
+input.pseudo
+{
+	width: 100%;
+	height: 2.6em;
+	margin: 1% 0;
+	padding: 0;
+	font-family: Coolvetica;
+	font-size: 1.4em;
+	
+
+}
+
+input:hover:not(.pseudo)
+{
+	border: 3px solid #14CC9B;
+	cursor: pointer;
+}
+
+input:active:not(.pseudo)
+{
+	position: relative;
+	top: 1px;
+	left: 1px;
+}
+
+label
+{
+	display: inline-block;
+	font-size: 35px;
+	color: #FFAE19;
+	text-shadow: 2px 1px 2px #2c2c2c;
+	font-weight: bold;
+	width: 90%;
+}
+
+.texte {
+    font-size: 20px;
+    color: #000070;
+}
+
+
+.pseudo
+{
+	background-image: none;
+	box-shadow: none;
+	border: 4px inset #000000;
+	width: 96.4%;
+	padding-left: 0.5em;
+	background-color: white;
+	color: black;
+}
+
+
+
+
+
+h2
+{
+	margin: 0 10px;
+	font-family: Coolvetica;
+	font-size: 1.6em;
+}
+
+
+@-webkit-keyframes rise
+{
+    from
+	{
+		top:-300px;
+		opacity: 0;
+	}
+	
+    to 
+	{
+		top: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes rise
+{
+    from
+	{
+		bottom:-20px;
+		opacity: 0;
+	}
+	
+    to 
+	{
+		bottom: 0;
+		opacity: 1;
+	}
+}
+
+

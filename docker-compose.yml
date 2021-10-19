@@ -13,6 +13,6 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
     volumes:
-       - "./Projet_PHP/stage_projet.sql:/docker-entrypoint-initdb.d/1.sql"
+       - "./Projet_PHP/stages_projet.sql:/docker-entrypoint-initdb.d/1.sql"
 
 #reste à ajouter le code source

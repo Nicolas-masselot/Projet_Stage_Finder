@@ -85,31 +85,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
 </div>
 
-<?php
-	$servername = "mysql";
-	$username = "user_projet_mvc";
-	$password = "projet_mvc";
-	$bdd = "stages_projet" ;
-
-	// Create connection
-	$conn = new mysqli($servername, $username, $password);
-
-	// Check connection
-	if ($conn->connect_error) {
-	die("Connection failed: " . $conn->connect_error);
-	} else {
-		echo "Connected successfully";
-	}
-	if ($result = $conn->query('SELECT * FROM Personne')) {
-		echo "Returned rows are: " . $result -> num_rows;
-		// Free result set
-		//$result -> free_result();
-	}
-
-	$conn->close();
-
-?>
-
-
 </body>
 </html>
