@@ -347,13 +347,13 @@
 					'num_secu' => $this->input->post('num_secu'),
 					'mutuelle' => $this->input->post('mutuelle'),
 					'objectif_pro' => $this->input->post('obj_pro'),
-					'motdepasse' => $this->input->post('motdepasse'), // hasher le mdp !!!!!! 
+					'motdepasse' => $this->input->post('motdepasse'),
 					'fonction_pro' => $this->input->post('fct_pro')
 					);
 			
 					$this->load->model('mStages');
 					$this->mStages->create_utilisateur($new_user);
-					$this->envoyer_mail($new_user['mail'],$new_user['motdepasse'],$new_user['nom'],$new_user['prenom']); // dans le mail mettre le mdp non hashé
+					$this->envoyer_mail($new_user['mail'],$new_user['motdepasse'],$new_user['nom'],$new_user['prenom']);
 					redirect('main_stage/afficher_utilisateurs');
 				
 				
@@ -928,5 +928,4 @@
 			$this->session->unset_userdata('email');
 			redirect('main_stage');
 		}
-		//d'autres fonctions a ajouter
 	}

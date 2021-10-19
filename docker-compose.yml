@@ -13,6 +13,4 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
     volumes:
-       - "./Projet_PHP/stages_projet.sql:/docker-entrypoint-initdb.d/1.sql"
-
-#reste à ajouter le code source
+       - "./Projet_PHP/stages_projet.sql:/docker-entrypoint-initdb.d/1.sql" #script initial lancé pour créer la base de donnée et mettre les données de test

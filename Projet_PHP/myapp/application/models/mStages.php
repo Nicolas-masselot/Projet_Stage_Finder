@@ -408,7 +408,7 @@ class mStages extends CI_model
 	public function userLogin($mail_utilisateur,$mdp_utilisateur)
 	{
 		$this->db->where('mail',$mail_utilisateur);
-		$this->db->where('motdepasse',$mdp_utilisateur); // hasher le mdp !!!!!!!!!!!!!!!!!!!!!!!!!
+		$this->db->where('motdepasse',$mdp_utilisateur);
 		$query = $this->db->get('personne');
 		
 		if ($query->num_rows() > 0)
