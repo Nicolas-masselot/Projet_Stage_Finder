@@ -59,7 +59,9 @@
                     <h4 class="service-heading">Professionnel / Etudiant / Secrétariat / Responsable</h4>
                     <p class="text-muted">Indiquez nous qui vous êtes.</p>
                     <br>
-                        
+                    <img src="<?php echo base_url('img\utilisateur.png')?>" width="200" height="200">
+                    <br>
+                    <br>
                         <?php echo anchor('/main_stage/login','Se connecter', 'class="btn_choice" name="connecter"' ); ?>
                         <br>
                 
@@ -85,11 +87,20 @@
                     <p class="text-muted"> <?php echo $contenus->procedure_candidature;?><p>
 
                     <h7> Suivi </h7>
-                    <p class="text-muted"> <?php echo $contenus->suivi_stage;?></p>
-
+                    <p class="text-muted"> 
+                    <img src="<?php echo base_url('img\cv.png')?>" width="200" height="200">
+                    <br>
+                    <br>
+                    <?php echo $contenus->suivi_stage;?>
+                    </p>
+                    <img src="<?php echo base_url('img\stage.png')?>" width="200" height="200">
+                    <br>
+                    <br>
                     <h7> Documents de fin de stage </h7>
                     <p class="text-muted"><?php echo $contenus->doc_fin_stage;?></p>
-
+                    <img src="<?php echo base_url('img\doc.png')?>" width="150" height="200">
+                    <br>
+                    <br>
                 </div>
             </div>
         </div>
@@ -105,9 +116,15 @@
                     
                     <h7> Le rapport de stage </h7>
                     <p class="text-muted"><?php echo $contenus->rapport_stage;?> </p>
+                    <img src="<?php echo base_url('img\rapport.png')?>" width="210" height="260">
+                    <br>
+                    <br>
 
                     <h7> La soutenance </h7>
                     <p class="text-muted"><?php echo $contenus->soutenance;?></p>
+                    <img src="<?php echo base_url('img\expose.png')?>" width="300" height="300">
+                    <br>
+                    <br>
 
                 </div>
             </div>
@@ -121,9 +138,20 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">A propos</h2>
+
+                    <p class="text-muted"> 
+                        Ce site web a été programmé dans le cadre du projet PHP du module M3104. <br>
+                        Le site a pour principale vocation la gestion et le suivi des stages des étudiants.<br>
+                        Actuellement, ce processus demande enormement de temps, le but étant de faciliter tout ça.<br>
+                        <br>
+                        <br>
+                    </p>
+
                     <p class="text-muted"> Les créateurs du site :
                                             -Lucas Collado
                                             -Nicolas Masselot</p>
+
+                    <img src="<?php echo base_url('img\amis.png')?>" width="350" height="250">
                 </div>
             </div>
         </div>

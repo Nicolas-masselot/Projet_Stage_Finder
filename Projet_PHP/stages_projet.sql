@@ -43,8 +43,68 @@ CREATE TABLE `contenus` (
 --
 
 INSERT INTO `contenus` (`id_auteur`, `suivi_stage`, `doc_fin_stage`, `rapport_stage`, `soutenance`, `procedure_candidature`) VALUES
-(1, '      suivi de stage      2    ', 'documents de fin      ', '      rapport de stage"', '      infos sur la soutenance      ', '      infos sur la procedure  2   ');
+(1, '         <font color="#4CAF50" face="verdana"> 
+   <br>
+Le maître de stage est votre responsable dans l’entreprise, c’est lui qui vous encadre sur une base quotidienne au cours du stage.   <br>
 
+C’est lui qui fixe les règles à appliquer dans l’entreprise. En tant que stagiaire, vous devez vous conformer au règlement de l\'entreprise.   <br>
+
+Le référent de votre stage est votre interlocuteur pour l’IUT. Son rôle est de vous suivre et de vous conseiller pendant la durée de votre stage. Il présidera votre jury lors de  la soutenance.   <br>
+
+L’attestation de fin de stage est obligatoire pour valider le stage.   <br>
+
+Cette attestation est à faire remplir par l’entreprise à la fin du stage. Vous êtes tenus d’en remettre une copie au secrétariat pédagogique.            <br>
+            <br>
+</font>                           ',
+'<font color="#4CAF50" face="verdana"> 
+   <br>
+Vous devez vous assurer que les trois documents ci-après ont été remplis et rendus au secrétariat du département informatique avant votre soutenance :   <br>
+    <br>
+    L\'organisme d\'accueil doit remplir et viser l\'annexe 1 (attestation de fin de stage) et vous le remettre à la fin du stage ;    <br>
+    L\'organisme d\'accueil doit remplir et viser l\'annexe 2 (fiche d\'évaluation du stage par l\'organisme d\'accueil) ;    <br>
+    L\'étudiant doit remplir l\'annexe 3 (fiche d\'évaluation du stage par l\'étudiant).             <br>       
+            <br>
+</font>', 
+' <font color="black" face="verdana">
+            <br>
+Le rapport doit contenir impérativement les éléments suivants :            <br>
+   <br>
+    la page de couverture (cartonnée) ;            <br>
+    la page de garde : elle reprend les éléments principaux de la page de couverture ;            <br>
+    un résumé en français ;            <br>
+    un ensemble de mots clés décrivant votre travail ;            <br>
+    les remerciements ;            <br>
+    la table des matières ;            <br>
+    l’introduction ;            <br>
+    le corps du rapport (pas plus de 3 pages consacrées à la présentation de l’entreprise) ;            <br>
+    l\'analyse par le stagiaire de son insertion dans le milieu professionnel – bilan d’activité ;            <br>
+    la conclusion ;            <br>
+    les annexes techniques ;            <br>
+    une feuille de temps.            <br>            <br>
+
+</font>', 
+'            <font color="black" face="verdana"> 
+   <br>
+L\'exposé comportera les points suivants :   <br>
+   <br>
+    présentation du plan ;   <br>
+    introduction ;   <br>
+    présentation du contexte du stage ;   <br>
+    explication de la démarche ;   <br>
+    justification des solutions proposées ;   <br>
+    démonstration/présentation du travail et de ses résultats ;   <br>
+    conclusion.   <br>            <br>
+</font>',
+'                           <br>
+<font color="#4CAF50" face="verdana">
+   Chercher une organisation (entreprise ou autre) puis spécifier le sujet et l\'environnement du stage (langage, localisation, technologie, etc.) ; <br>
+    Remplir "numériquement" le fichier de validation (que vous trouverez infra dès que possible) et l\'envoyer à : youssef.chikhaoui@univ-amu.fr ; <br>
+    La demande de stage doit être validé par le département ; <br>
+    Si la réponse à la demande est positive, les exemplaires de la convention de stage sont éditées par le secrétariat puis dans la foulée envoyées à l\'entreprise qui après les avoir signées les retourne à l\'IUT pour que l\'étudiant et le chef de département signent aussi in fine; <br>
+    Sinon retour à l\'étape 1. <br>
+            <br>
+
+</font> ');
 -- --------------------------------------------------------
 
 --

@@ -75,7 +75,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'mysql',
+	'hostname' => 'localhost',
 	'username' => 'user_projet_mvc',
 	'password' => 'projet_mvc',
 	'database' => 'stages_projet',
